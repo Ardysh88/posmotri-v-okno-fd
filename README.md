@@ -1,1 +1,1 @@
-https://github.com/Ardysh88/posmotri-v-okno-fd-main
+https://github.com/Ardysh88/posmotri-v-okno-fd
