@@ -1,0 +1,33 @@
+.error {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #545050;
+}
+
+.error__title {
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: 'FiraSansCondensed';
+  src: url('FiraSansCondensed-Bold.woff2') format('woff2'),
+       url('FiraSansCondensed-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Подключение обычного шрифта (Regular) */
+@font-face {
+  font-family: 'FiraSansCondensed';
+  src: url('FiraSansCondensed-Regular.woff2') format('woff2'),
+       url('FiraSansCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
