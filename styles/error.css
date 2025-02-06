@@ -1,10 +1,13 @@
 .error {
   position: absolute;
-  inset: 0;
+  top: 78px; /* Используем только top вместо inset */
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #545050;
+  height: 385px;
 }
 
 .error__title {
@@ -15,19 +18,8 @@
   text-transform: uppercase;
 }
 
-@font-face {
-  font-family: 'FiraSansCondensed';
-  src: url('FiraSansCondensed-Bold.woff2') format('woff2'),
-       url('FiraSansCondensed-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Подключение обычного шрифта (Regular) */
-@font-face {
-  font-family: 'FiraSansCondensed';
-  src: url('FiraSansCondensed-Regular.woff2') format('woff2'),
-       url('FiraSansCondensed-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+@media (max-width: 711px) {
+  .error {
+    height: auto;
+  }
 }
