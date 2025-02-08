@@ -1,14 +1,44 @@
-.error {
-  position: absolute;
-  top: 78px; /* Используем только top вместо inset */
-  left: 0;
-  right: 0;
+.error-template {
+  display: flex;
+  flex-direction: column;
+  height: 534px;
+  width: 1140px;
+  position: relative;
+  align-items: center;
+  } 
+  
+  .error {
+  position: relative;
+  top: 78px;
+  width: 100%; 
+  height: 386px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #545050;
-  height: 385px;
-}
+  }
+  
+  .error__title {
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  }
+  
+  @media (max-width: 711px) {
+  .error {
+  height: auto; /*Автовысота для адаптивности */
+  padding: 0px; /* Добавляем отступы сверху и снизу */
+  position: relative;
+  width: 100%;
+  }
+  
+  .error-template {
+  height: auto;
+  }
+  }
 
 .error__title {
   color: #fff;
@@ -18,8 +48,19 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 711px) {
-  .error {
-    height: auto;
-  }
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('FiraSansCondensed-Bold.woff2') format('woff2'),
+       url('FiraSansCondensed-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Подключение обычного шрифта (Regular) */
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('FiraSansCondensed-Regular.woff2') format('woff2'),
+       url('FiraSansCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
