@@ -1,21 +1,13 @@
-.error-template {
-  display: flex;
-  flex-direction: column;
-  height: 534px;
-  width: 1140px;
-  position: relative;
-  align-items: center;
-  } 
-  
   .error {
-  position: relative;
-  top: 78px;
-  width: 100%; 
-  height: 386px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #545050;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #545050;
+    height: 385px;
   }
   
   .error__title {
@@ -29,8 +21,8 @@
   
   @media (max-width: 711px) {
   .error {
-  height: auto; /*Автовысота для адаптивности */
-  padding: 0px; /* Добавляем отступы сверху и снизу */
+  height: auto; 
+  padding: 0px; 
   position: relative;
   width: 100%;
   }
@@ -56,7 +48,6 @@
   font-style: normal;
 }
 
-/* Подключение обычного шрифта (Regular) */
 @font-face {
   font-family: 'Fira Sans Condensed';
   src: url('FiraSansCondensed-Regular.woff2') format('woff2'),
